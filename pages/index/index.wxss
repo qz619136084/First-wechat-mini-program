@@ -1,0 +1,116 @@
+/* pages/index/index.wxss */
+.banner {
+  width: 100%;
+  height: 300rpx;
+}
+.banner image {
+  width: 100%;
+  height: 100%;
+}
+
+/* 五个图标导航区域 */
+.navContainer {
+  display: flex;
+}
+.navItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20%;
+}
+.navItem .iconfont {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 100rpx;
+  background-color: rgb(240, 19, 19);
+  font-size: 50rpx;
+  color: white;
+  margin: 20rpx 0;
+}
+.navItem text {
+  font-size: 26rpx;
+}
+
+/* 推荐歌曲 */
+.recommendContainer {
+  padding: 20rpx;
+}
+.recommendContainer .header {
+  padding-bottom: 20rpx;
+}
+.recommendContainer .header .title {
+  font-size: 32rpx;
+  line-height: 80rpx;
+  color: #666;
+}
+.recommendContainer .header .more {
+  float: right;
+  border: 1rpx solid #333;
+  padding: 10rpx 20rpx;
+  font-size: 24rpx;
+  border-radius: 30rpx;
+}
+/* 推荐内容区 */
+.recommendScroll {
+  display: flex;
+  height: 300rpx;
+}
+.scrollItem {
+  width: 200rpx;
+  margin-right: 20rpx;
+}
+.scrollItem image {
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 10rpx;
+}
+.scrollItem text {
+  font-size: 26rpx;
+  /* 多行文本溢出，省略号代替 */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+/* 排行榜 */
+.topList {
+  padding: 20rpx;
+}
+.topListSwiper {
+  height: 400rpx;
+}
+.swiperItem {
+  width: 96%;
+  background-color: #fbfbfb;
+}
+.swiperItem .title {
+  font-size: 30rpx;
+  line-height: 80rpx;
+}
+.musicItem {
+  /* 当一个元素设置为flex，他的子元素会自动成为block */
+  display: flex;
+  margin-bottom: 20rpx;
+}
+.musicItem image {
+  height: 100rpx;
+  width: 100rpx;
+  border-radius: 6rpx;
+}
+.musicItem .count {
+  width: 100rpx;
+  height: 100rpx;
+  text-align: center;
+  line-height: 100rpx;
+}
+.musicItem .musicName {
+  height: 100rpx;
+  line-height: 100rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
