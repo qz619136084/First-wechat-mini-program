@@ -1773,5 +1773,20 @@ Page({
   /**
    * 用户点击右上角分享
    */
-  onShareAppMessage() {},
+  onShareAppMessage({ from }) {
+    console.log(from);
+    if (from === "button") {
+      return {
+        title: "来自button的转发",
+        path: "/pages/video/video",
+        imageUrl: "/static/images/nvsheng.jpg",
+      };
+    } else {
+      return {
+        title: "来自menu的转发",
+        path: "/pages/video/video",
+        imageUrl: "/static/images/nvsheng.jpg",
+      };
+    }
+  },
 });
